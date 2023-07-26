@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // import LoginImage from "../images/login-page.jpg"
+import Navbar from "../components/Navbar";
 
 import { mobileSmall } from "../responsive"
 import { mobileLarge } from "../responsive"
@@ -92,6 +93,8 @@ const Login = () => {
   }
 
   return (
+  <>
+  <Navbar />
       <Container>
         <Wrapper>
           <Title>SIGN IN</Title>
@@ -110,6 +113,7 @@ const Login = () => {
           </Form>
         </Wrapper>
       </Container>
+      </>
   );
 }
 

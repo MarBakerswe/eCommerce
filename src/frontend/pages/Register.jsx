@@ -6,6 +6,8 @@ import { mobileSmall } from "../responsive";
 import { mobileLarge } from "../responsive";
 import { tablet } from "../responsive";
 
+import Navbar from "../components/Navbar";
+
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -99,6 +101,8 @@ const Register = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <Container>
       <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
@@ -144,6 +148,7 @@ const Register = () => {
         </Form>
       </Wrapper>
     </Container>
+    </>
   );
 };
 
